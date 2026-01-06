@@ -78,7 +78,7 @@ OpenAntiCollider detects various cheating behaviors such as speed hacks, fly hac
 | **whiteList** | Array of display names excluded from detection. |
 
 ### 4. Notes
-* **Collider Spam Detection** scans for colliders on the **PlayerLocal (Layer 10)**. If your world uses this layer for legitimate purposes, false positives may occur. This feature is disabled by default.
+* **Collider Spam Detection** scans for colliders on the specified layers. If your world uses these layers for legitimate purposes, false positives may occur. This feature is disabled by default.
 * This system uses a **score-based approach**: anomalies accumulate points over time, and penalties are only applied when the threshold is exceeded. This reduces false positives from brief lag spikes or legitimate gameplay.
 * The author assumes no responsibility for any issues arising from the use of this script.
 
@@ -161,7 +161,7 @@ OpenAntiColliderは、スピードハック、フライハック、コライダ�
 | **whiteList** | 検知対象から除外する表示名の配列です。 |
 
 ### 4. 注意事項
-* **コライダースパム検知**は **PlayerLocal（レイヤー10）** のコライダーをスキャンします。ワールド制作時にこのレイヤーを使用している場合、誤検知の可能性があります。この機能はデフォルトで無効です。
+* **コライダースパム検知**は指定されたレイヤーのコライダーをスキャンします。ワールド制作時にこれらのレイヤーを使用している場合、誤検知の可能性があります。この機能はデフォルトで無効です。
 * 本システムは**スコアベースのアプローチ**を採用しています。異常は時間経過でポイントが蓄積され、閾値を超えた場合にのみペナルティが適用されます。これにより、一時的なラグや正当なゲームプレイによる誤検知を軽減します。
 * 本スクリプトの使用により発生したいかなる不利益についても、制作者は一切の責任を負いません。
 
