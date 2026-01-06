@@ -25,3 +25,8 @@ Desktop.ini
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
+
+# Ignore .meta for non-Unity files (documentation, etc.)
+README.md.meta
+LICENSE.meta
+LICENSE.md.meta
