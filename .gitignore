@@ -1,0 +1,27 @@
+# OS generated
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio / VS Code
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.suo
+*.user
+*.userprefs
+*.unityproj
+
+# Backup files
+*.bak
+*~
+.*.swp
+
+# Unity - We are in an Assets folder, so we keep .meta files!
+# But we might want to ignore unexpected build output if it ever appears here (unlikely)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
