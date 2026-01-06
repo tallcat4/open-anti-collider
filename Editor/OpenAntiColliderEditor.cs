@@ -40,7 +40,7 @@ public class OpenAntiColliderEditor : Editor
     SerializedProperty enableColliderSpamDetection;
     SerializedProperty colliderSpamWeight;
     SerializedProperty scanRadius;
-    SerializedProperty playerLocalLayer;
+    SerializedProperty colliderDetectionLayers;
     SerializedProperty colliderCheckInterval;
 
     // Penalty Actions
@@ -82,7 +82,7 @@ public class OpenAntiColliderEditor : Editor
         enableColliderSpamDetection = serializedObject.FindProperty("enableColliderSpamDetection");
         colliderSpamWeight = serializedObject.FindProperty("colliderSpamWeight");
         scanRadius = serializedObject.FindProperty("scanRadius");
-        playerLocalLayer = serializedObject.FindProperty("playerLocalLayer");
+        colliderDetectionLayers = serializedObject.FindProperty("colliderDetectionLayers");
         colliderCheckInterval = serializedObject.FindProperty("colliderCheckInterval");
 
         // Penalty Actions
@@ -140,15 +140,15 @@ public class OpenAntiColliderEditor : Editor
             }
         );
 
-        // Collider Spam Detection (Layer10)
+        // Collider Spam Detection
         DrawDetectionSection(
-            "Collider Spam Detection (Layer10)",
+            "Collider Spam Detection",
             enableColliderSpamDetection,
             () => {
-                EditorGUILayout.HelpBox("This detection is aggressive and may cause false positives.", MessageType.Warning);
+                EditorGUILayout.HelpBox("This detection is aggressive and may cause false positives. Select layers to scan (e.g., PlayerLocal=10, MirrorReflection=18).", MessageType.Warning);
                 EditorGUILayout.PropertyField(colliderSpamWeight, new GUIContent("Weight (Score/Second)"));
                 EditorGUILayout.PropertyField(scanRadius);
-                EditorGUILayout.PropertyField(playerLocalLayer);
+                EditorGUILayout.PropertyField(colliderDetectionLayers, new GUIContent("Detection Layers"));
                 EditorGUILayout.PropertyField(colliderCheckInterval);
             }
         );

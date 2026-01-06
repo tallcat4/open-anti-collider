@@ -54,13 +54,13 @@ OpenAntiCollider detects various cheating behaviors such as speed hacks, fly hac
 | **sphereCastMaxDistance** | Maximum distance of the sphere cast downward. |
 | **groundLayers** | LayerMask defining which layers are considered valid ground. |
 
-#### Collider Spam Detection (Layer 10)
+#### Collider Spam Detection
 | Variable | Description |
 | :--- | :--- |
 | **enableColliderSpamDetection** | Enable/disable collider spam detection. **Disabled by default** due to potential false positives. |
 | **colliderSpamWeight** | Penalty score added per second when excessive colliders are detected. |
 | **scanRadius** | Radius around the player to scan for colliders. |
-| **playerLocalLayer** | The layer number to scan (default: 10 = PlayerLocal). |
+| **colliderDetectionLayers** | LayerMask defining which layers to scan for colliders (e.g., PlayerLocal=10, MirrorReflection=18). |
 | **colliderCheckInterval** | Interval (seconds) between collider scans. |
 
 #### Penalty Actions
@@ -137,13 +137,13 @@ OpenAntiColliderは、スピードハック、フライハック、コライダ�
 | **sphereCastMaxDistance** | スフィアキャストの下方向への最大距離です。 |
 | **groundLayers** | 有効な地面として認識するレイヤーを定義するLayerMaskです。 |
 
-#### コライダースパム検知（レイヤー10）
+#### コライダースパム検知
 | 変数名 | 説明 |
 | :--- | :--- |
 | **enableColliderSpamDetection** | コライダースパム検知の有効/無効を切り替えます。誤検知の可能性があるため**デフォルトで無効**です。 |
 | **colliderSpamWeight** | 過剰なコライダー検知時に毎秒加算されるペナルティスコアです。 |
 | **scanRadius** | プレイヤー周辺のコライダーをスキャンする半径です。 |
-| **playerLocalLayer** | スキャン対象のレイヤー番号（デフォルト: 10 = PlayerLocal）です。 |
+| **colliderDetectionLayers** | スキャン対象のレイヤーを定義するLayerMaskです（例: PlayerLocal=10, MirrorReflection=18）。 |
 | **colliderCheckInterval** | コライダースキャンの間隔（秒）です。 |
 
 #### ペナルティアクション

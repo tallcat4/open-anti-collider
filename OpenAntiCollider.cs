@@ -37,11 +37,11 @@ public class OpenAntiCollider : UdonSharpBehaviour
     [SerializeField] private float sphereCastMaxDistance = 0.4f;
     [SerializeField] private LayerMask groundLayers = 1 | (1 << 11);
 
-    [Header("Collider Spam Detection (Layer10)")]
+    [Header("Collider Spam Detection")]
     [SerializeField] private bool enableColliderSpamDetection = false;
     [SerializeField] private float colliderSpamWeight = 100.0f;
     [SerializeField] private float scanRadius = 3.0f;
-    [SerializeField] private int playerLocalLayer = 10;
+    [SerializeField] private LayerMask colliderDetectionLayers = (1 << 10);
     [SerializeField] private float colliderCheckInterval = 0.2f;
 
     [Header("Penalty Actions")]
@@ -197,8 +197,7 @@ public class OpenAntiCollider : UdonSharpBehaviour
     private bool CheckExcessiveColliders()
     {
         Vector3 scanPosition = localPlayer.GetPosition();
-        int layerMask = 1 << playerLocalLayer;
-        Collider[] hitColliders = Physics.OverlapSphere(scanPosition, scanRadius, layerMask);
+        Collider[] hitColliders = Physics.OverlapSphere(scanPosition, scanRadius, colliderDetectionLayers);
         
         return hitColliders.Length > 1;
     }
