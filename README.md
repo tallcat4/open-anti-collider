@@ -76,7 +76,11 @@ OpenAntiCollider detects various cheating behaviors such as speed hacks, fly hac
 * This system uses a **score-based approach**: anomalies accumulate points over time, and penalties are only applied when the threshold is exceeded. This reduces false positives from brief lag spikes or legitimate gameplay.
 * The author assumes no responsibility for any issues arising from the use of this script.
 
-### 5. About Credit
+### 5. Tips
+* The default values are tuned to avoid false positives during standard VRChat movements such as walking and jumping. Adjust the thresholds according to your world's needs.
+* In worlds that inherently feature double jumps or high-speed dashes, complete anti-cheat based on movement speed alone is not possible. In such cases, consider enabling Layer 10 detection or other methods.
+
+### 6. About Credit
 While in-world credit is appreciated, it may also provide hints to malicious users on how to bypass the system. Therefore, we fully support world developers who choose not to display credit out of such concerns. 
 
 ---
@@ -153,13 +157,22 @@ OpenAntiColliderは、スピードハック、フライハック、コライダ�
 * 本システムは**スコアベースのアプローチ**を採用しています。異常は時間経過でポイントが蓄積され、閾値を超えた場合にのみペナルティが適用されます。これにより、一時的なラグや正当なゲームプレイによる誤検知を軽減します。
 * 本スクリプトの使用により発生したいかなる不利益についても、制作者は一切の責任を負いません。
 
-### 5. クレジット表記について
+### 5. ヒント
+* 初期値は標準的なVRChat内での移動やジャンプなどの動作で誤検知を行わないように調整されています。状況に応じて閾値を調整してみてください。
+* 二段ジャンプや高速ダッシュなどが元から存在するワールドでは、移動速度などに基づく完全なアンチチートは不可能です。その場合はLayer10検知などの有効化も検討してみてください。
+
+### 6. クレジット表記について
 ワールド内でのクレジット表記はとても嬉しいですが、これは同時に悪意あるユーザーに回避のヒントを与える可能性があります。そのため、ワールド開発者の皆様がそれらを憂慮した結果クレジットを表記しない判断を強く支持します。
 
 ---
 
 ## Acknowledgements
 This project is inspired by [AvatarColliderDetector](https://github.com/5Solkun/AvatarColliderDetector) by 5Sori.
+
+Icons by [Heroicons](https://heroicons.com/) (MIT License).
+
+### Contributors
+- たくてぃー ([@taktie_vrc](https://x.com/taktie_vrc))
 
 ## License
 Copyright (c) 2026 tallcat4  
