@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="oac_banner.png" alt="OpenAntiCollider Banner" />
+</p>
+
 # OpenAntiCollider
 
 An Open Source Project for VRChat that provides robust detection against avatar collider abuse and movement exploits using UdonSharp.
