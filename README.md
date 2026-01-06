@@ -13,6 +13,8 @@ An Open Source Project for VRChat that provides robust detection against avatar 
 ### 1. Overview
 OpenAntiCollider detects various cheating behaviors such as speed hacks, fly hacks, and flying or floating using colliders. When detected, the system accumulates a penalty score, and once the threshold is exceeded, the player can be forcibly teleported or penalized to protect the fairness of your world.
 
+**Sample World:** [VRChat](https://vrchat.com/home/world/wrld_3f5533d6-e262-4e24-a2b7-b5dbf5660751/info)
+
 ### 2. Installation
 1. UdonSharp is required.
 2. Import the Unitypackage.
@@ -93,6 +95,8 @@ While in-world credit is appreciated, it may also provide hints to malicious use
 
 ### 1. 概要
 OpenAntiColliderは、スピードハック、フライハック、コライダーを使った飛行や空中浮遊など、様々なチート行為を検知します。検知時にはペナルティスコアが蓄積され、閾値を超えるとプレイヤーを強制テレポートさせたりペナルティを与えることで、ワールドの公平性を保護します。
+
+**サンプルワールド:** [VRChat](https://vrchat.com/home/world/wrld_3f5533d6-e262-4e24-a2b7-b5dbf5660751/info)
 
 ### 2. 導入方法
 1. UdonSharpが必要です。
